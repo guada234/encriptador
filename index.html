@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/diamod.png"image/x-icon" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-arriba">
+            <img src="imagenes/Logo-1.png"> 
+        </div>
+        
+        <div id="logo-personal">
+            <span>Adriana Fuentes Ramos</span>
+        </div> 
+    </header>
+    <div class="encriptador">
+    <div class="encriptador-texto">
+        <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="ingrese el texto"></textarea>
+    </div>
+    <div class="terminos">
+        <p>Introducir solo letras minusculas y sin acentos</p>
+    </div>
+    <div class="botones">
+        <button class="boton-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+        <button class="boton-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+        <button class="copiar" type="button" onclick="copiar()">Copiar</button>
+    </div>
+    <div class="encriptado">
+        <img src="imagenes/Muñeco.png" alt="imagen" id="hombreconlupa">
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+            <h2 id="titulo-mensaje-encriptado">Ningun mensaje enconcontrado </h2>
+            <p id="parrafo-encriptador">Ingresa el texto para encriptar o desencriptar</p>
+          
+        </div>
+    </div>
+</div>
+  
+</body>
+<script src="index.js"></script>
+</html>
